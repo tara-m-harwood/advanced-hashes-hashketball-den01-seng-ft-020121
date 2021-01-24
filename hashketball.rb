@@ -177,7 +177,7 @@ end
 def player_numbers(team)
   result = []
   game_hash.each do | location, team_data |
-      if game_hash[team_data][team_name] == team 
+      if game_hash[team_data][:team_name] == team 
         p team
       end  
   end
