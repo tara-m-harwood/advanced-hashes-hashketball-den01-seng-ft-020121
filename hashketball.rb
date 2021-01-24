@@ -200,4 +200,15 @@ def player_stats(player)
   result
 end
 
-player_stats("Alan Anderson")
+def big_shoe_rebounds
+  shoe = 0
+  rebounds = 0
+  game_hash.each do | location, team_data |
+    team_data[:players].each do | player_data |
+      p player_data[:shoe]
+    end
+  end
+end
+
+big_shoe_rebounds
+  
