@@ -177,8 +177,10 @@ end
 def player_numbers(team)
   result = []
   game_hash.each do | location, team_data |
-      
+      p game_hash[team]
   end
   p result
   result
 end
+
+player_numbers("Charlotte Hornets")
