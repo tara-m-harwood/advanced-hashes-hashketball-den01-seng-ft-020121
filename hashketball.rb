@@ -187,4 +187,17 @@ def player_numbers(team)
   result
 end
 
-player_numbers("Charlotte Hornets")
+def player_stats(player)
+  result = {}
+  game_hash.each do | location, team_data |
+   team_data[:players].each do | player_data |
+    if player_data[:player_name] == player
+      result = player_data
+    end  
+   end   
+  end
+  p result
+  result
+end
+
+player_stats("Alan Anderson")
